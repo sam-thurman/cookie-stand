@@ -1,18 +1,18 @@
 'use strict'
 
 var timeOfDay = ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
-var storeNames= [seattle, tokyo, dubai, paris, lima]
+var storeNames= [seattle, tokyo, dubai, paris, lima];
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor((Math.random() * (max - min + 1)) + min); 
-  }   ; 
-
+  }; 
  
+
 // SEATTLE
 
-  var seattle = {
+var seattle = {
     location: 'Seattle',
     min_customer: 23,
     max_customer: 65,
@@ -40,8 +40,7 @@ function seattleTotal(){
     var seattleTotalDiv = document.getElementById('seattle-total');
     var seattleTotal = document.createElement('li');
     seattleTotal.textContent =`Total cookies sold today: ${i}` ;
-    seattleTotalDiv.append(seattleTotal)
-    
+    seattleTotalDiv.append(seattleTotal);  
 };
 seattleTotal();
 
@@ -90,6 +89,7 @@ var dubai = {
     avg_cookie_per_customer: 3.7,
     hourly_customers: getRandomInt(11, 38)
 };
+
 function dubaiTotal(){
     var i = 0;
     var dubaiReportDiv = document.getElementById('dubai-report');
@@ -111,7 +111,7 @@ function dubaiTotal(){
     var dubaiTotal = document.createElement('li');
     dubaiTotal.textContent =`Total cookies sold today: ${i}` ;
     dubaiTotalDiv.append(dubaiTotal)
-    
+
 };
 dubaiTotal();
 
@@ -125,6 +125,7 @@ var paris = {
     avg_cookie_per_customer: 2.3,
     hourly_customers: getRandomInt(20, 38),
 };
+
 function parisTotal(){
     var i = 0;
     var parisReportDiv = document.getElementById('paris-report');
@@ -159,6 +160,7 @@ var lima = {
     avg_cookie_per_customer: 4.6,
     hourly_customers: getRandomInt(2, 16)
 };
+
 function limaTotal(){
     var i = 0;
     var limaReportDiv = document.getElementById('lima-report');
