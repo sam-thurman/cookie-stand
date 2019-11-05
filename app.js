@@ -45,14 +45,14 @@ function seattleTotal(){
     for (var hour = 0; hour < timeOfDay.length; hour++){
         var hourlySales = getRandomInt(seattle.min_customer,seattle.max_customer)*seattle.avg_cookie_per_customer;
         
-        var seattleDataDiv = document.getElementById(`seattle-data${hour}`);
+        var seattleDataDiv = document.getElementById(`seattle-report`);
         var seattleList = document.createElement('li');
         seattleList.textContent = `${timeOfDay[hour]}: ${Math.round(hourlySales)} cookies sold`;
         seattleDataDiv.append(seattleList) 
           
         i = i+hourlySales;
     };
-    var seattleTotalDiv = document.getElementById('seattle-total');
+    var seattleTotalDiv = document.getElementById('seattle-report');
     var seattleTotal = document.createElement('li');
     seattleTotal.textContent =`Total cookies sold today: ${Math.round(i)}` ;
     seattleTotalDiv.append(seattleTotal);  
@@ -80,14 +80,14 @@ function tokyoTotal(){
     for (var hour = 0; hour < timeOfDay.length; hour++){
         var hourlySales = getRandomInt(tokyo.min_customer,tokyo.max_customer)*tokyo.avg_cookie_per_customer;
         
-        var tokyoDataDiv = document.getElementById(`tokyo-data${hour}`);
+        var tokyoDataDiv = document.getElementById(`tokyo-report`);
         var tokyoList = document.createElement('li');
         tokyoList.textContent = `${timeOfDay[hour]}: ${Math.round(hourlySales)} cookies sold`;
         tokyoDataDiv.append(tokyoList) 
           
         i = i+hourlySales;
     };
-    var tokyoTotalDiv = document.getElementById('tokyo-total');
+    var tokyoTotalDiv = document.getElementById('tokyo-report');
     var tokyoTotal = document.createElement('li');
     tokyoTotal.textContent =`Total cookies sold today: ${Math.round(i)}` ;
     tokyoTotalDiv.append(tokyoTotal)
@@ -116,14 +116,14 @@ function dubaiTotal(){
     for (var hour = 0; hour < timeOfDay.length; hour++){
         var hourlySales = getRandomInt(dubai.min_customer,dubai.max_customer)*dubai.avg_cookie_per_customer;
         
-        var dubaiDataDiv = document.getElementById(`dubai-data${hour}`);
+        var dubaiDataDiv = document.getElementById(`dubai-report`);
         var dubaiList = document.createElement('li');
         dubaiList.textContent = `${timeOfDay[hour]}: ${Math.round(hourlySales)} cookies sold`;
         dubaiDataDiv.append(dubaiList) 
           
         i = i+hourlySales;
     };
-    var dubaiTotalDiv = document.getElementById('dubai-total');
+    var dubaiTotalDiv = document.getElementById('dubai-report');
     var dubaiTotal = document.createElement('li');
     dubaiTotal.textContent =`Total cookies sold today: ${Math.round(i)}` ;
     dubaiTotalDiv.append(dubaiTotal)
