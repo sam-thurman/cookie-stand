@@ -16,24 +16,29 @@ var timeOfDay = [
     '6pm',
     '7pm',
 ];
-var store= [seattle, tokyo, dubai, paris, lima];
+var stores= [seattle, tokyo, dubai, paris, lima];
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor((Math.random() * (max - min + 1)) + min); 
   }; 
- 
+function Store(location, min_customer, max_customer, avg_cookie_per_customer, hourly_customers){
+    this.location = location;
+    this.min_customer = min_customer;
+    this.max_customer = max_customer;
+    this.avg_cookie_per_customer = avg_cookie_per_customer;
+    this.hourly_customers = hourly_customers;
+};
+
+var seattle = new Store('Seattle', 23, 65, 6.3, getRandomInt(23,65));
+var tokyo = new Store('Tokyo', 3, 24, 1.2, getRandomInt(3,24));
+var dubai = new Store('Dubai', 11, 38, 3.7, getRandomInt(11,38));
+var paris = new Store('Paris', 20, 38, 2.3, getRandomInt(20,38));
+var lima = new Store('Lima', 2, 16, 4.6, getRandomInt(2,16));
 
 // SEATTLE
 
-var seattle = {
-    location: 'Seattle',
-    min_customer: 23,
-    max_customer: 65,
-    avg_cookie_per_customer: 6.3,
-    hourly_customers: getRandomInt(23,65),
-};
 
 function seattleTotal(){
     var i = 0;
@@ -62,13 +67,7 @@ seattleTotal();
 
 // TOKYO
 
-var tokyo = {
-    location: 'Tokyo',
-    min_customer: 3,
-    max_customer: 24,
-    avg_cookie_per_customer: 1.2,
-    hourly_customers: getRandomInt(3, 24),
-};
+
 
 function tokyoTotal(){
     var i = 0;
@@ -98,13 +97,7 @@ tokyoTotal();
 
 //DUBAI
 
-var dubai = {
-    location: 'Dubai',
-    min_customer: 11,
-    max_customer: 38,
-    avg_cookie_per_customer: 3.7,
-    hourly_customers: getRandomInt(11, 38)
-};
+
 
 function dubaiTotal(){
     var i = 0;
@@ -134,13 +127,7 @@ dubaiTotal();
 
 //PARIS
 
-var paris = {
-    location: 'Paris',
-    min_customer: 20,
-    max_customer: 38,
-    avg_cookie_per_customer: 2.3,
-    hourly_customers: getRandomInt(20, 38),
-};
+
 
 function parisTotal(){
     var i = 0;
@@ -152,14 +139,14 @@ function parisTotal(){
     for (var hour = 0; hour < timeOfDay.length; hour++){
         var hourlySales = getRandomInt(paris.min_customer,paris.max_customer)*paris.avg_cookie_per_customer;
         
-        var parisDataDiv = document.getElementById(`paris-data${hour}`);
+        var parisDataDiv = document.getElementById(`paris-report`);
         var parisList = document.createElement('li');
         parisList.textContent = `${timeOfDay[hour]}: ${Math.round(hourlySales)} cookies sold`;
         parisDataDiv.append(parisList) 
           
         i = i+hourlySales;
     };
-    var parisTotalDiv = document.getElementById('paris-total');
+    var parisTotalDiv = document.getElementById('paris-report');
     var parisTotal = document.createElement('li');
     parisTotal.textContent =`Total cookies sold today: ${Math.round(i)}` ;
     parisTotalDiv.append(parisTotal)
@@ -169,13 +156,7 @@ parisTotal();
 
 //LIMA
 
-var lima = {
-    location: 'Lima',
-    min_customer: 2,
-    max_customer: 16,
-    avg_cookie_per_customer: 4.6,
-    hourly_customers: getRandomInt(2, 16)
-};
+
 
 function limaTotal(){
     var i = 0;
@@ -187,14 +168,14 @@ function limaTotal(){
     for (var hour = 0; hour < timeOfDay.length; hour++){
         var hourlySales = getRandomInt(lima.min_customer,lima.max_customer)*lima.avg_cookie_per_customer;
         
-        var limaDataDiv = document.getElementById(`lima-data${hour}`);
+        var limaDataDiv = document.getElementById(`lima-report`);
         var limaList = document.createElement('li');
         limaList.textContent = `${timeOfDay[hour]}: ${Math.round(hourlySales)} cookies sold`;
         limaDataDiv.append(limaList) 
           
         i = i+hourlySales;
     };
-    var limaTotalDiv = document.getElementById('lima-total');
+    var limaTotalDiv = document.getElementById('lima-report');
     var limaTotal = document.createElement('li');
     limaTotal.textContent =`Total cookies sold today: ${Math.round(i)}` ;
     limaTotalDiv.append(limaTotal)
@@ -204,3 +185,10 @@ limaTotal();
 
 
 
+function renderCookieData(domReference){
+    var tableReport = document.getElementById('table-report');
+    var tr = document.createElement('tr');
+    tr.textContent = 'blah';
+    domReference = tr;
+    tableReport.append(tr);
+}
