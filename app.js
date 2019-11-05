@@ -32,14 +32,14 @@ function seattleTotal(){
         
         var seattleDataDiv = document.getElementById(`seattle-data${hour}`);
         var seattleList = document.createElement('li');
-        seattleList.textContent = `${timeOfDay[hour]}: ${hourlySales} cookies sold`;
+        seattleList.textContent = `${timeOfDay[hour]}: ${Math.round(hourlySales)} cookies sold`;
         seattleDataDiv.append(seattleList) 
           
         i = i+hourlySales;
     };
     var seattleTotalDiv = document.getElementById('seattle-total');
     var seattleTotal = document.createElement('li');
-    seattleTotal.textContent =`Total cookies sold today: ${i}` ;
+    seattleTotal.textContent =`Total cookies sold today: ${Math.round(i)}` ;
     seattleTotalDiv.append(seattleTotal);  
 };
 seattleTotal();
@@ -54,6 +54,7 @@ var tokyo = {
     avg_cookie_per_customer: 1.2,
     hourly_customers: getRandomInt(3, 24),
 };
+
 function tokyoTotal(){
     var i = 0;
     var tokyoReportDiv = document.getElementById('tokyo-report');
@@ -66,14 +67,14 @@ function tokyoTotal(){
         
         var tokyoDataDiv = document.getElementById(`tokyo-data${hour}`);
         var tokyoList = document.createElement('li');
-        tokyoList.textContent = `${timeOfDay[hour]}: ${hourlySales} cookies sold`;
+        tokyoList.textContent = `${timeOfDay[hour]}: ${Math.round(hourlySales)} cookies sold`;
         tokyoDataDiv.append(tokyoList) 
           
         i = i+hourlySales;
     };
     var tokyoTotalDiv = document.getElementById('tokyo-total');
     var tokyoTotal = document.createElement('li');
-    tokyoTotal.textContent =`Total cookies sold today: ${i}` ;
+    tokyoTotal.textContent =`Total cookies sold today: ${Math.round(i)}` ;
     tokyoTotalDiv.append(tokyoTotal)
     
 };
@@ -102,14 +103,14 @@ function dubaiTotal(){
         
         var dubaiDataDiv = document.getElementById(`dubai-data${hour}`);
         var dubaiList = document.createElement('li');
-        dubaiList.textContent = `${timeOfDay[hour]}: ${hourlySales} cookies sold`;
+        dubaiList.textContent = `${timeOfDay[hour]}: ${Math.round(hourlySales)} cookies sold`;
         dubaiDataDiv.append(dubaiList) 
           
         i = i+hourlySales;
     };
     var dubaiTotalDiv = document.getElementById('dubai-total');
     var dubaiTotal = document.createElement('li');
-    dubaiTotal.textContent =`Total cookies sold today: ${i}` ;
+    dubaiTotal.textContent =`Total cookies sold today: ${Math.round(i)}` ;
     dubaiTotalDiv.append(dubaiTotal)
 
 };
@@ -138,14 +139,14 @@ function parisTotal(){
         
         var parisDataDiv = document.getElementById(`paris-data${hour}`);
         var parisList = document.createElement('li');
-        parisList.textContent = `${timeOfDay[hour]}: ${hourlySales} cookies sold`;
+        parisList.textContent = `${timeOfDay[hour]}: ${Math.round(hourlySales)} cookies sold`;
         parisDataDiv.append(parisList) 
           
         i = i+hourlySales;
     };
     var parisTotalDiv = document.getElementById('paris-total');
     var parisTotal = document.createElement('li');
-    parisTotal.textContent =`Total cookies sold today: ${i}` ;
+    parisTotal.textContent =`Total cookies sold today: ${Math.round(i)}` ;
     parisTotalDiv.append(parisTotal)
 }
 parisTotal();
@@ -173,14 +174,14 @@ function limaTotal(){
         
         var limaDataDiv = document.getElementById(`lima-data${hour}`);
         var limaList = document.createElement('li');
-        limaList.textContent = `${timeOfDay[hour]}: ${hourlySales} cookies sold`;
+        limaList.textContent = `${timeOfDay[hour]}: ${Math.round(hourlySales)} cookies sold`;
         limaDataDiv.append(limaList) 
           
         i = i+hourlySales;
     };
     var limaTotalDiv = document.getElementById('lima-total');
     var limaTotal = document.createElement('li');
-    limaTotal.textContent =`Total cookies sold today: ${i}` ;
+    limaTotal.textContent =`Total cookies sold today: ${Math.round(i)}` ;
     limaTotalDiv.append(limaTotal)
 }
 limaTotal();
