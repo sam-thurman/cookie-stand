@@ -16,7 +16,7 @@ var timeOfDay = [
     '6pm',
     '7pm',
 ];
-var storeNames= [seattle, tokyo, dubai, paris, lima];
+var store= [seattle, tokyo, dubai, paris, lima];
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
