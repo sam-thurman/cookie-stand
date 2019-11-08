@@ -1,18 +1,23 @@
-body {
-  background-color: rgb(217, 238, 255);
-}
+
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: italic;
   color: rgb(252, 129, 129);
-  float: right;
-position: relative;
-}
-
-table, tr {
-  font-style: italic;
-  margin: 20 px;
-  color: rgb(252, 129, 129);
-  background-color: white;
+  
+  
 };
 
+table {
+  background-color: white;
+  border-spacing: 10rem;
+
+
+};
+
+form {
+  margin-top: 50px;
+}
+
+body {
+  background-color: rgb(217, 238, 255);
+}
