@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(216, 244, 253);
+  margin: 100px;
+}
+header {
+  height: 200px;
+  margin: 100px;  
+
+}
+#sales-info-link {
+  float: right;
+  
+}
