@@ -7,10 +7,9 @@ h1 {
   
 };
 
-table, th {
-  padding-bottom: 10px;
-
-
+#table {
+  margin: 50em;
+  
 };
 
 form {
