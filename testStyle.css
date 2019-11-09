@@ -1,4 +1,4 @@
-h1 {
+#website-header {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: italic;
   position: relative;
@@ -7,4 +7,4 @@ h1 {
   top: 50px;
   bottom: 100px;
   text-align: center;
-}
+};
