@@ -1,14 +1,36 @@
-#website-header {
+
+header{
+  background-color: rgb(210, 244, 255);
+  padding: 20px;
+}
+body {
+  background-color: rgb(187, 238, 255);
+}
+h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: italic;
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 100px;
   top: 50px;
-  bottom: 100px;
   text-align: center;
-};
-
-table {
-  height: 500 px;
+}
+p {
+  background-color: rgb(210, 244, 255);
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a {
+  background-color:rgb(255, 233, 233); 
+  padding: 8px;
+  
+}
+fieldset {
+  background-color: rgb(255, 233, 233); 
+  border: 1px black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+form {
+  background-color: rgb(255, 233, 233); 
+  
 }
