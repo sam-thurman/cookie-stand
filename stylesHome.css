@@ -6,8 +6,25 @@ header {
   height: 200px;
   margin: 100px;  
   text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
 }
 #sales-info-link {
   float: right;
-  
+}
+#intro {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul {
+  list-style-type: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul, li {
+  font-style: italic;
+  padding-left: 15px
+}
+#hours-right-side {
+  float: right;
 }
