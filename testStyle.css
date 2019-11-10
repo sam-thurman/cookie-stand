@@ -1,10 +1,16 @@
 
 header{
-  background-color: rgb(210, 244, 255);
+  background-color: white;
   padding: 20px;
+  border: solid;
+  border-color: rgb(209, 208, 208);
 }
 body {
-  background-color: white; 
+  background-color: rgb(210, 244, 255); 
+}
+footer {
+  height: 500px;
+  background-color: white;
 }
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -17,26 +23,36 @@ h1 {
 }
 
 p {
-  background-color: rgb(210, 244, 255);
+  background-color: white;
   padding: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#sales-info-p {
+  border: solid;
+  border-color: rgb(209, 208, 208);
 }
 a {
   padding: 8px;
 }
 fieldset {
-  background-color: rgb(210, 244, 255);
+  background-color: white;
   border: 1px black;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border: solid;
+  border-color: rgb(209, 208, 208);
 }
 form {
-  background-color: rgb(210, 244, 255);
+  background-color: white;
 }
 input {
   background-color: rgb(255, 233, 233); 
 }
-
+#pic-jumper {
+  padding: 70px;
+}
 #pic-cutter {
   margin: 20px;
   float: right;
+  border: solid;
+  border-color: rgb(209, 208, 208);
 }
