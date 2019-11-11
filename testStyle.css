@@ -9,8 +9,12 @@ body {
   background-color: rgb(210, 244, 255); 
 }
 footer {
-  height: 500px;
-  background-color: white;
+  
+  text-align: center;
+  padding-top: 15px;
+}
+#pic-salmon {
+  opacity: 85%;
 }
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

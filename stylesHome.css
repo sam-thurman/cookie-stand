@@ -2,6 +2,10 @@ body {
   background-color: rgb(216, 244, 253);
   margin: 100px;
 }
+main{
+  background-color: white;
+  padding: 20px;
+}
 header {
   height: 200px;
   margin: 100px;  
@@ -9,22 +13,43 @@ header {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-style: italic;
 }
+#pic-frosted-cookie {
+  border: solid;
+  border-color: rgb(247, 220, 220);
+  border-width: 10px;
+  margin-right: 15px;
+}
+#pic-school-of-fish {
+  border: solid;
+  border-color: rgb(247, 220, 220);
+  border-width: 10px;
+  margin-top: 20px; 
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#pic-chinook{
+  border: solid;
+  border-color: rgb(247, 220, 220);
+  border-width: 10px;
+  margin-left: 15px;
+
+}
 #sales-info-link {
   float: right;
 }
 #intro {
-  padding-top: 30px;
+  padding-top: 100px;
   padding-bottom: 30px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Georgia;
+  font-size: 14pt;
+}
+#contact-info {
+  font-size: 14pt;
 }
 ul {
   list-style-type: none;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+  font-family: Georgia;}
 ul, li {
   font-style: italic;
-  padding-left: 15px
-}
-#hours-right-side {
-  float: right;
+  padding-left: 70px
 }
