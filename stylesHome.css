@@ -44,6 +44,9 @@ header {
   font-size: 14pt;
 }
 #contact-info {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  font-family: Georgia;
   font-size: 14pt;
 }
 ul {
